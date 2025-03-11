@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+  {% block title %}
+    <title>Welcome to Index Page - TaskMate</title>
+  {% endblock title %}
+
+  {% block content %}
+  <br>
+        <div class="container">
+                <div class="row align-items-center">
+                     <div class="col-lg-4">
+                        <img src="{% static 'images/pic.jpg' %}" alt="notes" class="rounded-lg shadow" width="360" height="250">
+                </div>
+                     <div class="col-lg-4">
+                        <img src="{% static "images/pic2.jpg" %}" alt="notes" class="rounded-lg shadow" width="360" height="250">
+                </div>
+                      <div class="col-lg-4">
+                        <img src="{% static "images/pic3.jpg" %}" alt="notes" class="rounded-lg shadow" width="360" height="250">
+                </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+                <div class="row align-items-center" style="text-align: center;">    
+                    <h1 class="text-primary">Easy to Use, Easy to Remember, Plan Your Day</h1>
+                    <p>TaskMate is an app that helps you manage your tasks, deadlines, and reminders. It's easy to use, easy to remember, and it's perfect for people who want to plan their day.</p>
+                </div>
+            </div>
+              <a href="{% url 'login'%}"><h2 style="text-align: center;"> Let's Get Started</h2></a>
+    {% endblock content %}
