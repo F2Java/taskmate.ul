@@ -96,6 +96,7 @@ DATABASES = {
         'PORT':     env("DJANGO_DB_PORT"),
     }
 }
+DATABASE_URL=env("DATABASE_URL")
 
 
 
